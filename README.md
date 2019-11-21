@@ -1,4 +1,4 @@
-# Creando una Red Social
+![enter image description here](https://i.ibb.co/hfDSSDz/logo.png)
 
 ## Índice
 
