@@ -15,8 +15,8 @@
     - [2.1.2-Conclusiones de la encuesta](#Conclusiones-de-la-encuesta)
   - [2.2-Historias de Usuario](#historias-de-usuario)
   - [2.3-Diagrama de Flujo](#diagrama-de-flujo)
-  - [2.4-Prototipo de Baja Fidelidad](#prototipo-de-baja-fidelidad)
-    - [2.4.1-Sketch](#sketch)
+  - [2.4-Prototipos](#prototipos)
+    - [2.4.1-Prototipo de baja fidelidad](#prototipo-de-baja-fidelidad)
     - [2.4.2-Wireframe](#wireframe)
     - [2.4.3-Tests de usabilidad](#tests-de-usabilidad)
   - [2.5-Estudios de interfaz](#Estudios-de-interfaz)
@@ -60,9 +60,16 @@ Promover la cultura del reciclaje a trabes del conocimiento y diversas actividad
 ## **2.1.2-Conclusiones de la encuesta**
 ## **2.2-Historias de Usuario**
 ## **2.3-Diagrama de Flujo**
-## **2.4-Prototipo de Baja Fidelidad**
-## ** 2.4.1-Sketch**
+## **2.4-Prototipos**
+
+
+## ** 2.4.1-Prototipo de baja fidelidad**
+[Prototipo de baja 1](https://i.ibb.co/ysV1r5d/1.jpg)
+[Prototipo de baja 2](https://i.ibb.co/RjGYqPc/2.jpg)
 ## **2.4.2-Wireframe**
+
+[Figma](https://www.figma.com/file/XpCw0hPUecsp4tv9Yet16K/Reciclar-Unidos?node-id=0%3A1)
+
 ## **2.4.3-Tests de usabilidad**
 ## **2.5-Estudios de interfaz**
 ## **2.5.1-Estudio de benchmark**
