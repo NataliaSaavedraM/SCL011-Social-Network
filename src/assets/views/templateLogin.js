@@ -1,4 +1,3 @@
-
 import {templateRegister} from './templateRegister.js'
 export const templateLogin = () => {
     //creamos vista o pagina de login
@@ -34,3 +33,4 @@ export const templateLogin = () => {
 
 
 }
+
