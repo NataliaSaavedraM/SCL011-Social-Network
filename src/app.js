@@ -1,4 +1,4 @@
-
+import {observer} from './assets/js/auth.js'
 
 import { initFirebase } from '/assets/js/firebase.js';
 import { initRouter } from './route.js';
@@ -7,7 +7,7 @@ const init = () => {
     initFirebase();
     //la primera pantalla que abre 
     initRouter();
-  
+    observer();
     
 
 }

@@ -101,5 +101,19 @@ export const loginemail= (useremail, userpassword) =>{
             console.log(credential)
                 // ...
         })
-    
+       
+       
+    }
+
+    export const observer = () => {
+
+        firebase.auth().onAuthStateChanged(function(user) {
+            if (user) {
+              console.log('usuario activo')
+            } else {
+              // No user is signed in.
+              console.log('no hay usuario activo')
+            }
+          });
+
     }
