@@ -1,0 +1,138 @@
+*{
+  
+    font-family: 'roboto', sans-serif;
+    background-image: url("../img/reciclado.png");
+    font-size: 2vh;
+    }
+    .container#root{
+        margin:1%;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 2fr, 6fr, 4fr,4fr;
+        grid-template-areas:
+          "header"
+          "nav"
+          "section"
+          "footer";
+          
+          align-items: center;
+          text-align: justify;  
+          text-justify: auto;
+    }
+.container.header>img{
+    width: 150px;
+    height: 70px;
+    
+    align-items:center;
+    margin:0;
+    padding: 0%;
+}
+.container.nav{
+   display: inline;
+   padding: 0%;
+   margin-inline-end: 2%;
+   background: #69b746;
+}
+ul {
+    /* outline:1px solid yellow;*/
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     width: 300px;
+     line-height: 24px;
+     background: #69b746;
+ }
+ 
+li {
+    background: #69b746;
+    width: 100%;
+
+
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: #0E0D44;
+    padding-left: 112px;
+    margin-left: 0%;
+    text-align: left;
+    margin-right: 0%;
+    margin-bottom: 1%;
+   
+}
+a:hover {
+    background: #69b746;
+}
+a:active {
+    background: #333;
+    color: #84fa51;
+}
+
+
+ul li:first-child {
+    background: #69b746;
+}
+
+ul li:first-child a:hover{
+    color: #000;
+}
+ul li:first-child a:active{
+    color: #fff;
+} 
+.container.section{
+    margin:10%;
+    padding: 20%;
+    font-size: 17px;
+    line-height: 20px;
+    text-justify: auto;
+
+}
+#enter{
+display: block;
+text-align: center;
+align-content: center;
+align-items: center;
+background: #69b746;
+width: 247px;
+height: 50px;
+left: 39px;
+top: 443px;
+border-radius: 30px;
+background-origin: shadow 1px;
+margin: 42 px;
+float: none;
+}
+.button{
+width: 140px;
+height: 28px;
+left: 170px;
+top: 303px;
+stroke: #0E0D44;
+border-radius: 10px;
+background: #69b746;
+float: right;
+}
+#google{
+    width: 140px;
+    height: 28px;
+    left: 170px;
+    top: 303px;
+    border-radius: 10px;
+    background: #ea4335;
+    color: #fff;
+    }   
+    #facebook{
+        width: 140px;
+        height: 28px;
+        left: 170px;
+        top: 303px;
+        border-radius: 10px;
+        background: #26569D;
+        color: #fff;
+        } 
+.container.footer{
+    margin-bottom: 200px;
+    margin-top: 50%;
+}

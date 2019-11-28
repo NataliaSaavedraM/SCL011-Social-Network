@@ -1,4 +1,5 @@
 export const initFirebase = () => {
+
     //Configuración de Firebase de tu aplicación web
      var firebaseConfig = {
          apiKey: "AIzaSyD1YrCI7NDWzc2G3WP3TS85545IBqmo460",
@@ -16,3 +17,4 @@ export const initFirebase = () => {
  
  }
  
+

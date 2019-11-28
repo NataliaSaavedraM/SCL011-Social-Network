@@ -4,11 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+<!-- Inserte estos scripts en la parte inferior del HTML, pero antes de usar cualquier servicio de Firebase -->
+<!-- La aplicación Firebase (el SDK básico de Firebase) siempre es necesaria y debe aparecer primero  -->
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+<!-- Agregue los productos Firebase que desea usar -->
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
     <title>Social Network</title>
 </head>
+
 <body>
-    <h1>Social Network</h1>
-    <div id="root"></div>
-    <script type="module" src="./app.js"></script>
+   
+    <div id="root">
+        
+    </div>
+    <script type="module" src="app.js"></script>
 </body>
 </html>
