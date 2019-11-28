@@ -9,22 +9,24 @@ export const templateHome = () => {
     containerHome.innerHTML += `<header><img >
     <img src="../assets/img/headerxs.png" ></header> 
 <nav><ul>
-        <li>centros de reciclaje</li>
-        <li>valorizadoras de residuos</li>
-        <li>lo que tienes que saber</li>
-        <li>tus puntos mas cercanos</li>
+        <li class="section"><a href="#">Centros de reciclaje</a></li>
+        <li class="section"><a href="#">Valorizadoras de residuos</a></li>
+        <li class="section"><a href="#">Lo que tienes que saber</a></li>
+        <li class="section"><a href="#">Tus puntos mas cercanos</a></li>
       </ul></nav>
 <section>
 Comparte informacion, resuelve dudas, motivate junto a otros amigos del medio ambiente y participa en nuestros desafios en nuestra red social. Donde encontraras salas segun el tipo de residuo que te interese 
-<button id="enter"></button>
+<div><button id="enter" class="button">Acceder</button></div>
+
  </section>
 <footer>
-<div>Etiquetas:</div>
-<div>
+<div><div>Etiquetas:</div>
+<div class="keyWords">
 Basura, Calcín, Clasificación de los residuos, Compost o compuesto, Compostaje,
 Reciclaje, Recuperación, Recogida selectiva, Residuo, Residuos peligrosos
 Reutilizar, Vertido controlado, biodegradable, botellas.
-</div>
+</div></div>
+
 </footer> `
 
 
