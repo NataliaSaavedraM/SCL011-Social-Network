@@ -1,6 +1,7 @@
 import {templateRegister} from './templateRegister.js';
 import {templateInitSection} from './templateInitSection.js';
 import {loginemail, userGoogle, userFacebook, observer} from '../js/auth.js';
+
 export const templateLogin = () => {
     //creamos vista o pagina de login
     const containerLogin= document.getElementById('root');
@@ -42,20 +43,26 @@ loginEmail.addEventListener('click', ()=>{
     let useremail=document.getElementById('useremail').value;
     let userpassword=document.getElementById('userpassword').value;
     loginemail(useremail, userpassword); 
-   
+    containerLogin.innerHTML = " ";
+    templateInitSection();
 
 })
+
 
 const logingoogle=document.getElementById('google');
 logingoogle.addEventListener('click',()=>{
     userGoogle();
-   
+    containerLogin.innerHTML = " ";
+    templateInitSection();
 
 })
+
+
 const loginfacebook=document.getElementById('facebook')
 loginfacebook.addEventListener('click',()=>{
     userFacebook();
-    
+    containerLogin.innerHTML = " ";
+    templateInitSection();
 })
 
 

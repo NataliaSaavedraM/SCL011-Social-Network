@@ -1,4 +1,4 @@
-import {templateLogin} from './templateLogin.js'
+import {templateInitSection} from './templateInitSection.js'
 import {createUser} from '../js/auth.js'
 
 export const templateRegister= () => {
@@ -29,6 +29,7 @@ const newAccount= () => {
    // const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const password = document.getElementById("password").value;
+    
     createUser(email, password);
 
 }
@@ -36,8 +37,9 @@ const newAccount= () => {
 const createAccount=document.getElementById("register");
 createAccount.addEventListener("click",()=>{
    newAccount();
+   
    containerRegister.innerHTML = " ";
-   templateLogin();
+   templateInitSection();
    
 })
 

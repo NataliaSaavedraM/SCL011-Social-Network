@@ -18,11 +18,13 @@ export const validateUserInput=(useremail, userpassword)=>{
 }
 
 
-export const validateRecordInput=()=>{
+export const validateRecordInput=(email, password)=>{
 
     if(!validatedRecordInput(email, password)||email===""||password===""||password.length<6){
         return false
     }else{
         return true
     }
-}
+}   
+
+
