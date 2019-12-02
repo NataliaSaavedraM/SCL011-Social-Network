@@ -27,7 +27,7 @@ export const showTemplate = hash => {
 	const containerRoot = document.getElementById("root");
 	containerRoot.innerHTML = "";
 
-	//luego hacer un switch donde el parametro sea el route y analize los casos ada template
+	//luego hacer un switch donde el parametro sea el route y analize los cada template
 	switch (router) {
 		case "home":
 			//containerRoot.appendChild(templateHome());

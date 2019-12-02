@@ -2,9 +2,14 @@
   
     font-family: 'roboto', sans-serif;
     background-image: url("../img/reciclado.png");
-    font-size: 2vh;
+    font-size: 2.2vh;
     }
-    .container#root{
+    body{
+        margin: 5%;
+        
+        
+    }
+    #root{
         margin:1%;
         display: grid;
         grid-gap: 20px;
@@ -89,14 +94,21 @@ ul li:first-child a:active{
     text-justify: auto;
 
 }
+.enterButton{
+    padding: 5%;
+    justify-content: flex-start;
+    align-content: center;
+    justify-items: center;
+    text-align: center;
+}
 #enter{
 display: block;
 text-align: center;
 align-content: center;
 align-items: center;
 background: #69b746;
-width: 247px;
-height: 50px;
+width: 170px;
+height: 40px;
 left: 39px;
 top: 443px;
 border-radius: 30px;

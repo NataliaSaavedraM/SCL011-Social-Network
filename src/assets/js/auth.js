@@ -1,53 +1,62 @@
 /* import { templateLogin } from "../views/templateLogin.js";
 import { templateInitSection } from "../views/templateInitSection.js";
 import { templateHome } from "../views/templateHome.js";*/
-import {  emailValidation, validateUserInput, validateRecordInput } from "./validate.js" 
+import {
+	
+	validateUserInput,
+	validateRecordInput
+} from "./validate.js";
 
 // registro de usuario
 
 export const createUser = (email, password) => {
 	
-	firebase
-		.auth()
-		.createUserWithEmailAndPassword(email, password)
-		.then(function() {
-			verifyEmail();
+		if (validateRecordInput === true) {
+			firebase
+				.auth()
+				.createUserWithEmailAndPassword(email, password)
+				.then(function() {
+					verifyEmail();
+					
+				})
+				.catch(function(error) {
+					// Handle Errors here.
+					var errorCode = error.code;
+					var errorMessage = error.message;
+					// ...
+					console.log(errorCode);
+					console.log(errorMessage);
+				});
+		} else {
+			alert("complete todos los campos");
 			
-		})
-		.catch(function(error) {
-			// Handle Errors here.
-			var errorCode = error.code;
-			var errorMessage = error.message;
-			// ...
-			console.log(errorCode);
-			console.log(errorMessage);
-		});
+		}
+	
 };
-
-
-
-
 
 // Acceso con usuario ya creado
 
 export const loginemail = (useremail, userpassword) => {
-	firebase
-		.auth()
-		.signInWithEmailAndPassword(useremail, userpassword)
-		.catch(function(error) {
-			// Handle Errors here.
-			var errorCode = error.code;
-			var errorMessage = error.message;
-			// ...
-			console.log(errorCode);
-			console.log(errorMessage);
-		});
+	if (validateUserInput === true) {
+		firebase
+			.auth()
+			.signInWithEmailAndPassword(useremail, userpassword)
+			.then(() => {
+				
+			})
+			.catch(function(error) {
+				// Handle Errors here.
+				var errorCode = error.code;
+				var errorMessage = error.message;
+				// ...
+				console.log(errorCode);
+				console.log(errorMessage);
+			});
+	} else {
+		alert("Completa todos los campos");
+		
+	}
 };
-
-
-
-
-
 
 export const userGoogle = () => {
 	const provider = new firebase.auth.GoogleAuthProvider();
@@ -159,29 +168,27 @@ export const closeSession = () => {
 		});
 };
 
-export const profileEmail =()=>{
-    let user = firebase.auth().currentUser;   
-   
-   if (user != null) {
-     name = user.displayName;
-     email = user.email;
-     photoUrl = user.photoURL;
-     emailVerified = user.emailVerified;
-     uid = user.uid; 
-   }
-   }
+export const profileEmail = () => {
+	let user = firebase.auth().currentUser;
 
-   export const profileRed=()=>{
-    let user = firebase.auth().currentUser; 
-    if (user != null) {
-        user.providerData.forEach(function (profile) {
-          console.log("Sign-in provider: " + profile.providerId);
-          console.log("  Provider-specific UID: " + profile.uid);
-          console.log("  Name: " + profile.displayName);
-          console.log("  Email: " + profile.email);
-          console.log("  Photo URL: " + profile.photoURL);
-        });
-      }
-}
+	if (user != null) {
+		name = user.displayName;
+		email = user.email;
+		photoUrl = user.photoURL;
+		emailVerified = user.emailVerified;
+		uid = user.uid;
+	}
+};
 
- 
+export const profileRed = () => {
+	let user = firebase.auth().currentUser;
+	if (user != null) {
+		user.providerData.forEach(function(profile) {
+			console.log("Sign-in provider: " + profile.providerId);
+			console.log("  Provider-specific UID: " + profile.uid);
+			console.log("  Name: " + profile.displayName);
+			console.log("  Email: " + profile.email);
+			console.log("  Photo URL: " + profile.photoURL);
+		});
+	}
+};
