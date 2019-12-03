@@ -19,7 +19,7 @@ export const templateLogin = () => {
     <input id="userpassword" type="password"  placeholder="ingresa contraseña">
     <button id="loginEmail" class="button">Entrar</button>  
     <div>
-    <p>¿Eres nuevo? </p><a id="newUser" href="#">Crea una Cuenta</a>
+    <p>¿Eres nuevo? </p><a id="newUser" href="#/register">Crea una Cuenta</a>
     </div>      
   
     </section>
@@ -35,6 +35,7 @@ export const templateLogin = () => {
     newUser.addEventListener('click', () => {
         containerLogin.innerHTML = " "
         templateRegister();
+        window.location.hash ="#/register"
     })
 
 const loginEmail=document.getElementById('loginEmail');
@@ -45,6 +46,7 @@ loginEmail.addEventListener('click', ()=>{
     loginemail(useremail, userpassword); 
     containerLogin.innerHTML = " ";
     templateInitSection();
+    window.location.hash ="#/initSection"
 
 })
 
@@ -54,6 +56,7 @@ logingoogle.addEventListener('click',()=>{
     userGoogle();
     containerLogin.innerHTML = " ";
     templateInitSection();
+    window.location.hash ="#/initSection"
 
 })
 
@@ -63,6 +66,7 @@ loginfacebook.addEventListener('click',()=>{
     userFacebook();
     containerLogin.innerHTML = " ";
     templateInitSection();
+    window.location.hash ="#/initSection"
 })
 
 

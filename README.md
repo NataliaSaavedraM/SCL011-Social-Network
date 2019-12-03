@@ -57,6 +57,7 @@ Promover la cultura del reciclaje a trabes del conocimiento y diversas actividad
 ## **2.1-Encuesta online**
 [Encuesta](https://docs.google.com/forms/d/1ig6b3R66fTu3Kbld2cH6bvpadLCux255c4Q8lyoDfm8/edit#responses)
 ## **2.1.1-Alcance de la encuesta**
+
 ## **2.1.2-Conclusiones de la encuesta**
 ## **2.2-Historias de Usuario**
 ## **2.3-Diagrama de Flujo**
@@ -85,32 +86,32 @@ Promover la cultura del reciclaje a trabes del conocimiento y diversas actividad
 ## **7-Checklist obligatorio**
 ### Javascript 
 
- - [ ] Usa varias páginas (sin diferentes HTML, todo a través de código JS)	
+ - [x] Usa varias páginas (sin diferentes HTML, todo a través de código JS)	
  - [ ] Usa "routing", esto es, cambio de URL sin usar otro HTML (todo a través de JS)		
- - [ ] 	Usa funciones pequeñas con una sola funcionalidad		
- - [ ] 	Usa Firebase Auth / Mongo Stitch Auth		
- - [ ] 	Puede guardar información en Firebase Database / Mongo Stitch / Local Storage		
- - [ ] 	Puede Leer desde Firebase Database / Mongo Stitch / Local Storage		
- - [ ] 	Mantiene orden del código (usa ESLint, por ejemplo)		
- - [ ] 	Hay test (al menos para las funciones principales)		
+ - [x] 	Usa funciones pequeñas con una sola funcionalidad		
+ - [x] 	Usa Firebase Auth / Mongo Stitch Auth		
+ - [x] 	Puede guardar información en Firebase Database / Mongo Stitch / Local Storage		
+ - [x] 	Puede Leer desde Firebase Database / Mongo Stitch / Local Storage		
+ - [x] 	Mantiene orden del código (usa ESLint, por ejemplo)		
+ - [x] 	Hay test (al menos para las funciones principales)		
  - [ ] 	Guarda archivos, como imagenes, en Firebase Storage u otro servicio de almacenamiento		
 		
 ### HTML 
- - [ ] 	Tiene solo un archivo principal		
- - [ ] 	Usa HTML semántico (section, header, article, footer...)		
- - [ ] 	Hay orden y estructura del HTML generado por JS					
+ - [x] 	Tiene solo un archivo principal		
+ - [x] 	Usa HTML semántico (section, header, article, footer...)		
+ - [x] 	Hay orden y estructura del HTML generado por JS					
 
 ### CSS
  - [ ] 	Se adapta a todas las pantallas		
- - [ ] 	Usa una hoja de estilos clara, con clases reutilizables		
+ - [x] 	Usa una hoja de estilos clara, con clases reutilizables		
 	
 ### GIT
- - [ ] 	Hace commits con propósito claro y pequeños		
- - [ ] 	Usa "ramas de característica" (Feature branch)		
- - [ ] 	Hay pull requests con intención clara, una característica en particular para cada uno		
+ - [x] 	Hace commits con propósito claro y pequeños		
+ - [x] 	Usa "ramas de característica" (Feature branch)		
+ - [x] 	Hay pull requests con intención clara, una característica en particular para cada uno		
  - [ ] 	Usa tags en su repositorio		
 	
 ### Github / Planificación *
- - [ ] 	Hay issues o tareas bien definidas		
+ - [x] 	Hay issues o tareas bien definidas		
  - [ ] 	Hay releases con tags involucrados		
- - [ ] 	Está desplegado el proyecto		
+ - [x] 	Está desplegado el proyecto		

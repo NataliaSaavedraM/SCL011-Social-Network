@@ -2,6 +2,7 @@
 export const createPost = ()=>{
     
     const db = firebase.firestore(); 
+    
     db.collection("users").add({
         uId: firebase.auth().currentUser.email,
         userName: firebase.auth().currentUser.displayName,
@@ -11,6 +12,8 @@ export const createPost = ()=>{
     })
     .then(function(docRef) {
         console.log("Doc escrito con ID: ", docRef.id);
+       
+
     })
     .catch(function(error) {
         console.error("Error al agregar doc: ", error);
@@ -24,7 +27,7 @@ export const createPost = ()=>{
     
     export let  printPost =()=>{
         const db=firebase.firestore();
-        db.collection("users").get().then((querySnapshot) => {
+        db.collection("users").orderBy('date', "desc").limit(8).get().then((querySnapshot) => {
             querySnapshot.forEach((doc) => {
                // console.log(`${doc.data().userName} : ${doc.data().text}`);
                 document.getElementById('containerPost').innerHTML+=`<p>${doc.data().userName} : ${doc.data().text}</p>`
@@ -32,12 +35,14 @@ export const createPost = ()=>{
         });
     }
 
-  /*   export const deletePost=()=>{
-
+   /*    export const deletePost=()=>{
+        const db=firebase.firestore();
+       
         db.collection("users").doc("id").delete().then(function() {
             console.log("Post borrado");
         }).catch(function(error) {
             console.error("Error al eliminar post: ", error);
         });
 
-    } */
+    }   
+ */

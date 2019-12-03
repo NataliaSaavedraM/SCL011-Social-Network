@@ -34,7 +34,7 @@ const buttonAcces=document.getElementById('enter')
 buttonAcces.addEventListener('click',()=>{
     containerHome.innerHTML="";
     templateLogin();
-    
+    window.location.hash ="#/login"
 })
 
 

@@ -1,5 +1,5 @@
 
-import {closeSession, profileEmail, profileRed} from '../js/auth.js';
+import {closeSession} from '../js/auth.js';
 import {templateHome} from './templateHome.js';
 import {createPost, printPost} from '../js/post.js'
  
@@ -34,20 +34,22 @@ document.getElementById("close").addEventListener('click',()=>{
     closeSession();
     containerInitSection.innerHTML = " ";
     templateHome();
-   
+    window.location.hash ="#/Home"
 
 })
 document.getElementById("buttonPost").addEventListener('click',()=>{
     createPost();
     printPost();
+    
     document.getElementById("textPost").value ="";
 
 })
 
-/* document.getElementById('buttonDeletePost').addEventListener('click',()=>{
+/*  document.getElementById('buttonDeletePost').addEventListener('click',()=>{
+
     deletePost();
-     <button id="buttonDeletePost" class="button">Eliminar</button>
-}) */
+ <button id="buttonDeletePost" class="button">Eliminar</button>
+})    */
 
 }
 

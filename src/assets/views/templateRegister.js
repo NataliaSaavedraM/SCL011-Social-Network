@@ -1,4 +1,4 @@
-import {templateInitSection} from './templateInitSection.js'
+import {templateLogin} from './templateLogin.js'
 import {createUser} from '../js/auth.js'
 
 export const templateRegister= () => {
@@ -38,8 +38,9 @@ const createAccount=document.getElementById("register");
 createAccount.addEventListener("click",()=>{
    newAccount();
    
-   containerRegister.innerHTML = " ";
+   containerRegister.innerHTML = "";
    templateInitSection();
+   window.location.hash ="#/initSection"
    
 })
 

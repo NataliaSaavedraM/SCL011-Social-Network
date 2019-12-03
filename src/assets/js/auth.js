@@ -28,7 +28,7 @@ export const createUser = (email, password) => {
 					console.log(errorMessage);
 				});
 		} else {
-			alert("complete todos los campos");
+			alert("completa todos los campos");
 			
 		}
 	
@@ -97,7 +97,7 @@ export const userFacebook = () => {
 };
 
 const authFacebook = () => {
-	const provider = new firebase.auth.FacebookAuthProvider();
+	let provider = new firebase.auth.FacebookAuthProvider();
 	authCuentaFacebook(provider);
 };
 
